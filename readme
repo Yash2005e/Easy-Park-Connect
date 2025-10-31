@@ -1,0 +1,14 @@
+------------------------------------------
+System Flow :                             
+Home Page --> Parking Manager or User (for login)
+-->Admin Dashboard 
+-->Map for User : Searching facility, direct route generation after any parking service click, 
+__________________________________________
+if Parking Manager -->  Username : admin123 
+                        Password : 123
+
+if User --> Username : user123
+            Password : 123
+
+-------------------------------------------
+

@@ -1,0 +1,72 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .role-card {
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .role-card:hover {
+            transform: translateY(-8px);
+        }
+        .role-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center">
+    <h1 class="text-white mb-5">Welcome to Smart Parking System</h1>
+    <div class="row justify-content-center g-4">
+
+        <!-- Manager -->
+        <div class="col-md-4">
+            <a href="<?php echo base_url('admin/login'); ?>" class="text-decoration-none text-dark">
+                <div class="card role-card p-4 bg-light">
+                    <div class="role-icon text-primary">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Parking Manager</h3>
+                    <p>Manage slots, vehicles, and earnings.</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Customer/User -->
+        <div class="col-md-4">
+            <a href="<?php echo base_url('user/login'); ?>" class="text-decoration-none text-dark">
+                <div class="card role-card p-4 bg-light">
+                    <div class="role-icon text-success">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Customer / User</h3>
+                    <p>Find available parking slots on the map.</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Icons & Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
